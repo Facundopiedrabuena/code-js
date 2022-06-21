@@ -14,5 +14,7 @@ let generateExcuse = function() {
   return `${who[whoIndex]} ${what[whatIndex]} ${when[whenIndex]}`;
 };
 window.onload = () => {
-  document.querySelector("#excuse").innerHTML = generateExcuse();
+  document.querySelector("#btn").addEventListener("click", () => {
+    document.querySelector("#excuse").innerHTML = generateExcuse();
+  });
 };
